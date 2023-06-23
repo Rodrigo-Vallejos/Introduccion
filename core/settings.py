@@ -32,10 +32,24 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    # Other Django Apps
+    'tailwind',
+    'theme',
+    
     # My Apps
     'core',
     'blog',
 ]
+
+# Tailwind Configs
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+# NPM Paths
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd" # Windows
+# NPM_BIN_PATH = '/usr/local/bin/npm' # Linux
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
